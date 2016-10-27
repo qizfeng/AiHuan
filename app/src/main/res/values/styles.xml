@@ -1,0 +1,90 @@
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/background_light</item>
+    </style>
+
+    <style name="btn" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/zpf_action_bar_txt_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/zpf_action_bar_title_sub_size</item>
+    </style>
+
+    <style name="btn.red" parent="btn">
+        <item name="android:background">@drawable/zpf_btn_black_login</item>
+    </style>
+    <!-- 自定义进度条提示RoundProgressDialog主题 -->
+    <style name="RoundProgressDialog_Theme" parent="@android:style/Theme.Dialog">
+
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 对话框的背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 对话框无标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 自定义进度条提示RoundProgressDialog -->
+    <style name="RoundProgressDialog">
+        <item name="android:minWidth">60dp</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+
+    <style name="ActivityDialogStyleBottom" parent="android:Theme.Dialog">
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+    </style>
+
+    <!-- bottom animation like method -->
+    <style name="AnimationBottomDialog">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">  <!--Tablayout 使用的样式-->
+        <item name="tabIndicatorHeight">3dp</item>     <!--TAB底部滑块高度-->
+        <item name="tabPaddingStart">12dp</item>    <!--TAB左边padding-->
+        <item name="tabPaddingEnd">12dp</item>    <!--TAB右边padding-->
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>    <!--TAB文字样式-->
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">  <!--TAB文字样式-->
+        <item name="android:textSize">@dimen/zpf_action_bar_title_sub_size</item>
+        <item name="textAllCaps">false</item>    <!--英文大写,默认true-->
+    </style>
+
+    <style name="zpf_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/zpf_checkbox</item>
+    </style>
+</resources>

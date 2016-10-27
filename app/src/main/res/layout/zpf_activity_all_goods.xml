@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zpf_action_bar_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/il_topbar"
+        layout="@layout/zpf_include_action_bar" />
+
+    <com.zipingfang.aihuan.view.PagerSlidingTabStrip
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/black"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabBackground="@drawable/background_tab"
+        app:pstsUnderlineHeight="3dp"
+        app:selectedTabTextColor="@color/black" />
+    <!--<android.support.design.widget.TabLayout
+        android:id="@+id/main_tab"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/black"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/zpf_txt_gray" />-->
+
+    <com.zipingfang.aihuan.view.HorizontalListView
+        android:id="@+id/horListView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+
+    <com.zipingfang.aihuan.view.LazyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+</LinearLayout>

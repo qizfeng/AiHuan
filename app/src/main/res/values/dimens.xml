@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--zpf action bar height-->
+    <dimen name="zpf_action_bar_height">48dip</dimen>
+
+    <dimen name="zpf_action_bar_back_padding">10dip</dimen>
+
+
+    <!--主标题字体大小-->
+    <dimen name="zpf_action_bar_title_size">22sp</dimen>
+
+    <!--副标题字体大小-->
+    <dimen name="zpf_action_bar_title_sub_size">18sp</dimen>
+    <!--公用字体大小-->
+    <dimen name="zpf_common_txt_size">15sp</dimen>
+
+    <!-- 自定义形状的角度和边距 -->
+    <dimen name="shap_radius">3dp</dimen>
+    <dimen name="shap_radius_none">0dp</dimen>
+    <dimen name="shap_padding_top">0dp</dimen>
+    <dimen name="shap_padding_bottom">0dp</dimen>
+    <dimen name="shap_padding_left">3dp</dimen>
+    <dimen name="shap_padding_right">3dp</dimen>
+
+    <!-- 自定义ProgressDialog的圆角半径 -->
+    <dimen name="applib_round_progress_radius">8dp</dimen>
+    <!-- 自定义Toast的图标paddingRight -->
+    <dimen name="applib_round_toast_icon_padding_right">10dp</dimen>
+    <!-- 自定义Toast的字体大小 -->
+    <dimen name="applib_round_toast_msg_fontsize">15sp</dimen>
+
+
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+
+</resources>

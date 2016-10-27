@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="red">#C40000</color>
+    <color name="redLight">#E62D30</color>
+    <!-- 选中效果灰色 -->
+    <color name="pub_selected_gray">#20000000</color>
+    <!--公用action bar 颜色-->
+    <color name="zpf_action_bar_gray">#F3F3F3</color>
+    <color name="zpf_action_bar_txt_color">#cc000000</color>
+
+    <!--action bar下方灰色线条-->
+    <color name="zpf_action_bar_gray_line">#7f000000</color>
+
+    <color name="zpf_gray_line">#4D4D4D00</color>
+    <!--red-->
+    <color name="zpf_color_red">#ff0000</color>
+    <!-- 自定义ProgressDialog的背景色 -->
+    <color name="applib_progress_toast_bg">#8f000000</color>
+    <!-- 自定义ProgressDialog的字体颜色 -->
+    <color name="applib_progress_toast_msg_color">#ffffffff</color>
+    <!-- 自定义Toast的字体颜色 -->
+    <color name="applib_round_toast_msg_color">#ffffffff</color>
+
+    <!--bottom bar text color-->
+    <color name="tabbar_select">#9e5e2a</color>
+    <color name="tabbar_unselect">#ffffff</color>
+
+    <!--===========user============= -->
+    <color name="zpf_user_edit_nickname_button_color">#0076FF</color>
+    <color name="zpf_txt_gray">#858585</color>
+
+    <!--拍卖状态颜色-->
+    <!--即将开始-->
+    <color name="zpf_paimai_will_start">#F55252</color>
+
+    <!--正在进行-->
+    <color name="zpf_paimai_starting">#50E1B2</color>
+
+    <!--已经结束-->
+    <color name="zpf_paimai_end">#A5A5A5</color>
+
+    <!--商品详情深灰色字体-->
+    <color name="zpf_goods_dark_gray">#505050</color>
+
+    <!--出价记录领先-->
+    <color name="zpf_offer_first">#F55252</color>
+
+    <!--储值卡背景色-->
+    <color name="zpf_value_card_pink">#ed6f6f</color>
+    <color name="zpf_value_card_blue">#316dbc</color>
+</resources>

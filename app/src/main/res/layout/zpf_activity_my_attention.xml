@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/il_topbar"
+        layout="@layout/zpf_include_action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_party"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_party"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textSize="@dimen/zpf_action_bar_title_sub_size"
+                android:gravity="center"
+                android:text="商品" />
+            <View
+                android:id="@+id/line_party"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="-5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textSize="@dimen/zpf_action_bar_title_sub_size"
+                android:textColor="@color/zpf_txt_gray"
+                android:gravity="center"
+                android:text="专场" />
+            <View
+                android:id="@+id/line_goods"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="-5dp"
+                android:layout_gravity="center"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zpf_action_bar_gray" />
+</LinearLayout>

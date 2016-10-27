@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zpf_action_bar_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/il_topbar"
+        layout="@layout/zpf_include_action_bar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zpf_my_attention_radiobutton"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/zpf_radio_button_color"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <RadioButton
+            android:id="@+id/rb_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zpf_my_attention_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待付款"
+            android:textColor="@color/zpf_radio_button_color"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <RadioButton
+            android:id="@+id/rb_send_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zpf_my_attention_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="@color/zpf_radio_button_color"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <RadioButton
+            android:id="@+id/rb_shou_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zpf_my_attention_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="@color/zpf_radio_button_color"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <RadioButton
+            android:id="@+id/rb_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zpf_my_attention_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@color/zpf_radio_button_color"
+            android:textSize="@dimen/zpf_common_txt_size" />
+    </RadioGroup>
+
+    <com.zipingfang.aihuan.pullToRefreshView.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <include layout="@layout/zpf_layout_refresh_header" />
+
+        <com.zipingfang.aihuan.pullToRefreshView.PullableListView
+            android:id="@+id/lv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/zpf_action_bar_gray"
+            android:dividerHeight="10dp"/>
+
+        <include layout="@layout/zpf_layout_load_more" />
+    </com.zipingfang.aihuan.pullToRefreshView.PullToRefreshLayout>
+</LinearLayout>

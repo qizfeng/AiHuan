@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        applicationId "com.zipingfang.aihuan"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+   // sourceSets {
+        //main {
+           //manifest.srcFile 'AndroidManifest.xml'
+           // java.srcDirs = ['src']
+          //  resources.srcDirs = ['src']
+          //  aidl.srcDirs = ['src']
+          //  renderscript.srcDirs = ['src']
+           // res.srcDirs = ['res']
+          //  assets.srcDirs = ['assets']
+           // jniLibs.srcDirs = ['libs']
+      //  }
+
+        // Move the tests to tests/java, tests/res, etc...
+//        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        //debug.setRoot('build-types/debug')
+        //release.setRoot('build-types/release')
+ //   }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+    destinationDir file("$projectDir/libs")
+    baseName "jpush"
+    extension "jar"
+    from fileTree(dir: "libs", include: "**/*.so")
+    into "lib"
+}
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn(nativeLibsToJar)
+}
+dependencies {
+    //    compile 'com.android.support:support-v4:23.4.0'
+    //    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile files('libs/picasso-2.3.2.jar')
+    compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
+    //    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile files('libs/org.apache.http.legacy.jar')
+    compile 'com.google.code.gson:gson:2.7'
+    compile files('libs/jpush.jar')
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile files('libs/okhttp-2.0.0-RC1.jar')
+    compile files('libs/okio-1.0.0.jar')
+    compile files('libs/jpush.jar')
+    compile files('libs/jpush-android-2.2.0.jar')
+    compile project(':lib:bdwallet_pay_sdk')
+    compile project(':lib:pingpp')
+}

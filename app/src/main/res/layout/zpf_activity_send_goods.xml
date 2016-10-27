@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zpf_action_bar_gray"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/il_topbar"
+        layout="@layout/zpf_include_action_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_receive_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/zpf_common_txt_size"
+                android:textColor="@color/zpf_txt_gray"
+                android:text="收货人:"/>
+            <TextView
+                android:id="@+id/tv_receive_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15256998281"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/zpf_txt_gray"
+                android:textSize="@dimen/zpf_common_txt_size"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_receiver_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/zpf_common_txt_size"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="收货人地址:"
+            android:textColor="@color/zpf_txt_gray"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/zpf_gray_line" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/zpf_gray_line" />
+        <LinearLayout
+            android:id="@+id/ll_express_company"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/zpf_pub_white_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="快递公司"
+                android:textSize="@dimen/zpf_common_txt_size" />
+
+            <TextView
+                android:id="@+id/tv_express"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@mipmap/pub_btn_next"
+                android:drawablePadding="10dp"
+                android:text="申通"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/zpf_txt_gray"
+                android:textSize="@dimen/zpf_common_txt_size" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/zpf_gray_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/zpf_pub_white_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="快递单号"
+                android:textSize="@dimen/zpf_common_txt_size" />
+
+            <EditText
+                android:id="@+id/tv_express_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@mipmap/pub_btn_next"
+                android:drawablePadding="10dp"
+                android:hint="请输入快递单号"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/zpf_txt_gray"
+                android:textSize="@dimen/zpf_common_txt_size" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/zpf_gray_line" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/zpf_btn_black_login"/>
+</LinearLayout>

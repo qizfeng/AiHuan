@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_buyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_buyer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="收货人:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+
+            <TextView
+                android:id="@+id/tv_buyer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_buyer_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/zpf_common_txt_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zpf_gray_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_is_default"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:button="@drawable/zpf_address_selector"
+            android:checked="false"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:text="设为默认" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_delete"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_delete"
+            android:drawableLeft="@mipmap/icon_edit"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+    </RelativeLayout>
+</LinearLayout>

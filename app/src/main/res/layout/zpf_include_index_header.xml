@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zpf_action_bar_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/il_header_banner"
+        layout="@layout/zpf_include_header_banner" />
+
+    <LinearLayout
+        android:id="@+id/ll_toutiao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/zpf_pub_white_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dp"
+            android:text="爱换头条"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/zpf_action_bar_gray_line" />
+
+        <com.zipingfang.aihuan.view.AutoTextView
+            android:id="@+id/tv_toutiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginRight="20dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-20dp"
+            android:src="@mipmap/pub_btn_next" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/zpf_action_bar_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_miaosha"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@mipmap/home_icon_minute"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="秒杀"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="好货超惊喜" />
+
+                <com.zipingfang.aihuan.view.TimeButton
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/zpf_index_border_layout"
+                    android:gravity="center"
+                    android:text="01:20:20" />
+
+                <TextView
+                    android:id="@+id/tv_miaosha_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/home_btn_next"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/zpf_action_bar_gray_line" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_miaosha"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+           <!-- <com.zipingfang.aihuan.view.HorizontalListView
+                android:id="@+id/hLv_miaosha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scrollbars="none">
+            </com.zipingfang.aihuan.view.HorizontalListView>-->
+        </LinearLayout>
+        <!--商家降价拍-->
+        <LinearLayout
+            android:id="@+id/ll_jiangjia"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@mipmap/home_icon_pricedown"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="降价拍"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_jiangjia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:drawableRight="@mipmap/home_btn_next"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/zpf_action_bar_gray_line" />
+
+            </LinearLayout>
+
+            <!--<com.zipingfang.aihuan.view.HorizontalListView
+                android:id="@+id/hLv_jiangjia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scrollbars="none">
+
+            </com.zipingfang.aihuan.view.HorizontalListView>-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_jiangjia"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/zpf_action_bar_gray" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <include
+        android:id="@+id/il_act_banner"
+        layout="@layout/zpf_include_activity_banner" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/zpf_action_bar_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <include
+        android:id="@+id/il_auction"
+        layout="@layout/zpf_include_auction_layout" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/zpf_action_bar_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/zpf_gray_line" />
+    <TextView
+        android:id="@+id/tv_suggest_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/zpf_action_bar_title_sub_size"
+        android:textStyle="bold"
+        android:text="精品推荐" />
+</LinearLayout>

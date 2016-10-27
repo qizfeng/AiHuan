@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="出价记录"
+            android:textColor="@color/zpf_goods_dark_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_offer_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="(3)"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_record_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawableRight="@mipmap/pub_btn_next"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:drawablePadding="5dp"
+            android:text="查看全部"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="状态"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="竞拍人"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="价格"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="时间"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+    </LinearLayout>
+    <include
+        android:id="@+id/il_offer_record_one"
+        layout="@layout/zpf_item_offer_record"/>
+    <include
+        android:id="@+id/il_offer_record_two"
+        layout="@layout/zpf_item_offer_record"
+        />
+    <include
+        android:id="@+id/il_offer_record_three"
+        layout="@layout/zpf_item_offer_record"/>
+</LinearLayout>

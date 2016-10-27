@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zpf_action_bar_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/il_topbar"
+        layout="@layout/zpf_include_action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="零钱"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+
+            <TextView
+                android:id="@+id/tv_mingxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/zpf_pub_selector"
+                android:padding="10dp"
+                android:text="明细"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="¥"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zpf_common_txt_size" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="25dp"
+            android:background="@color/zpf_action_bar_gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_chongzhi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/wallet_icon_chongzhi"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="充值"
+                    android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/zpf_action_bar_gray_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_tixian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/wallet_icon_tixian"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="提现"
+                    android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_score_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="积分"
+            android:textColor="@color/black"
+            android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_score_next"
+            android:layout_toRightOf="@+id/tv_score_txt"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <ImageView
+            android:id="@+id/iv_score_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pub_btn_next" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zpf_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_card_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="储值卡"
+            android:textColor="@color/black"
+            android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_card_next"
+            android:layout_toRightOf="@+id/tv_card_txt"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <ImageView
+            android:id="@+id/iv_card_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pub_btn_next" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zpf_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_conpon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_coupon_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="优惠券"
+            android:textColor="@color/black"
+            android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+
+        <TextView
+            android:id="@+id/tv_conpon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_conpon_next"
+            android:layout_toRightOf="@+id/tv_coupon_txt"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/zpf_txt_gray"
+            android:textSize="@dimen/zpf_common_txt_size" />
+
+        <ImageView
+            android:id="@+id/iv_conpon_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pub_btn_next" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zpf_gray_line" />
+</LinearLayout>

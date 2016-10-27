@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 红色带圆角的背景 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中 -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+
+            <corners android:radius="0dp" />
+
+
+            <stroke android:width="0dp" android:color="#CCCCCC" />
+
+            <padding android:bottom="@dimen/shap_padding_bottom" android:left="@dimen/shap_padding_left" android:right="@dimen/shap_padding_right" android:top="@dimen/shap_padding_top" />
+        </shape>
+    </item>
+    <!-- 按下 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+
+            <corners android:radius="0dp" />
+
+            <stroke android:width="0dp" android:color="#CCCCCC" />
+
+            <padding android:bottom="@dimen/shap_padding_bottom" android:left="@dimen/shap_padding_left" android:right="@dimen/shap_padding_right" android:top="@dimen/shap_padding_top" />
+        </shape>
+    </item>
+    <!-- 不可点击 -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+
+            <corners android:radius="0dp" />
+
+            <stroke android:width="0dp" android:color="#CCCCCC" />
+
+            <padding android:bottom="@dimen/shap_padding_bottom" android:left="@dimen/shap_padding_left" android:right="@dimen/shap_padding_right" android:top="@dimen/shap_padding_top" />
+        </shape>
+    </item>
+    <!-- 正常状态 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+
+            <corners android:radius="0dp" />
+
+            <stroke android:width="0dp" android:color="#CCCCCC" />
+
+            <padding android:bottom="@dimen/shap_padding_bottom" android:left="@dimen/shap_padding_left" android:right="@dimen/shap_padding_right" android:top="@dimen/shap_padding_top" />
+        </shape>
+    </item>
+
+</selector>

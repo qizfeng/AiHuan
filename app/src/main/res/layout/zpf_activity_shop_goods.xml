@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zpf_action_bar_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/il_topbar"
+        layout="@layout/zpf_include_action_bar" />
+
+    <com.zipingfang.aihuan.pullToRefreshView.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include layout="@layout/zpf_layout_refresh_header" />
+
+        <com.zipingfang.aihuan.pullToRefreshView.PullableListView
+            android:id="@+id/lv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+        <include layout="@layout/zpf_layout_load_more" />
+    </com.zipingfang.aihuan.pullToRefreshView.PullToRefreshLayout>
+</LinearLayout>

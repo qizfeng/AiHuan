@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_value_card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/zpf_shape_bg_round_pink">
+
+        <TextView
+            android:id="@+id/tv_card_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/zpf_action_bar_title_sub_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_card_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/zpf_common_txt_size" />
+
+            <TextView
+                android:id="@+id/tv_card_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/zpf_common_txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_buy"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:alpha="0.3"
+            android:visibility="gone"
+            android:background="@drawable/zpf_shape_bg_buy">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/zpf_action_bar_title_sub_size"
+                android:text="购买" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layoutBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/ll_cancel"
+        android:background="@drawable/zpf_user_take_photo_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tvCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zpf_pub_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:padding="10dp"
+            android:text="拍照"
+            android:textColor="@color/zpf_user_edit_nickname_button_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/zpf_gray_line" />
+
+        <Button
+            android:id="@+id/tvPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zpf_pub_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:padding="10dp"
+            android:text="相册"
+            android:textColor="@color/zpf_user_edit_nickname_button_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/zpf_user_take_photo_border"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zpf_pub_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/zpf_user_edit_nickname_button_color" />
+    </LinearLayout>
+
+</RelativeLayout>
